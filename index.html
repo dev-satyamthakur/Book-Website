@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Book Site</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -127,6 +127,48 @@
             <div class="row my-5 g-5 justify-content-around align-items-center">
                 <div class="col-6 col-lg-4">
                     <img src="assets/js_book.jpg" alt="JS Book" class="img-fluid">
+                </div>
+
+                <!-- accordion -->
+                <div class="col-lg-6">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Chapter 1 - Your First Web Page
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio esse exercitationem totam maxime tenetur provident non. Necessitatibus nobis magni, minima recusandae voluptates eos sint! Itaque vitae nemo officiis, necessitatibus eos provident tenetur similique omnis quisquam sed, ad nostrum praesentium recusandae.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Chapter 2 - HTML CSS and JavaScript
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus id dignissimos temporibus aut minima. Laboriosam odit consectetur ratione ea velit iure pariatur, veritatis culpa temporibus quo sit placeat quis dolorum, ut repellat quam voluptatum quod blanditiis repellendus itaque. Eius, veritatis!
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Chapter 3 - Next Steps to Become a Web Dev
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste qui ducimus at quia delectus animi repellendus sunt minima dolore corporis numquam dolor officia quisquam, nesciunt perspiciatis veritatis fugit similique. Quae sequi necessitatibus, quas dignissimos veniam perferendis ducimus, facilis ea sed illo nam tenetur fugiat dicta sapiente laudantium? Quaerat, labore tempora.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
             </div>
         </div>
