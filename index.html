@@ -74,7 +74,9 @@
                     <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now!</a>
                 </div>
                 <div class="col-md-5 text-center d-none d-md-block">
-                    <img class="img-fluid" src="assets/web-dev-man.png" alt="Web Dev">
+                    <span class="tt" data-bs-placement="bottom" title="Web Dev Man">
+                        <img class="img-fluid" src="assets/web-dev-man.png" alt="Web Dev">
+                    </span>
                 </div>
             </div>
         </div>
@@ -226,7 +228,9 @@
                                 <i class="bi bi-star-fill"></i>
                             </div>
                             <h5 class="mb-1">A must buy for every aspiring web dev.</h5>
-                            <p class="mb-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem dolorum modi beatae quod ad corrupti officiis neque quibusdam. Fuga sunt dicta ex eos! Dolorum quisquam consequatur tempora sunt minus. At!</p>
+                            <p class="mb-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem
+                                dolorum modi beatae quod ad corrupti officiis neque quibusdam. Fuga sunt dicta ex eos!
+                                Dolorum quisquam consequatur tempora sunt minus. At!</p>
                             <small>Review by Jake</small>
                         </div>
                         <div class="list-group-item py-3">
@@ -238,7 +242,9 @@
                                 <i class="bi bi-star-fill"></i>
                             </div>
                             <h5 class="mb-1">A must buy for every aspiring web dev.</h5>
-                            <p class="mb-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem dolorum modi beatae quod ad corrupti officiis neque quibusdam. Fuga sunt dicta ex eos! Dolorum quisquam consequatur tempora sunt minus. At!</p>
+                            <p class="mb-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem
+                                dolorum modi beatae quod ad corrupti officiis neque quibusdam. Fuga sunt dicta ex eos!
+                                Dolorum quisquam consequatur tempora sunt minus. At!</p>
                             <small>Review by Jake</small>
                         </div>
                         <div class="list-group-item py-3">
@@ -250,7 +256,9 @@
                                 <i class="bi bi-star-fill"></i>
                             </div>
                             <h5 class="mb-1">A must buy for every aspiring web dev.</h5>
-                            <p class="mb-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem dolorum modi beatae quod ad corrupti officiis neque quibusdam. Fuga sunt dicta ex eos! Dolorum quisquam consequatur tempora sunt minus. At!</p>
+                            <p class="mb-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem
+                                dolorum modi beatae quod ad corrupti officiis neque quibusdam. Fuga sunt dicta ex eos!
+                                Dolorum quisquam consequatur tempora sunt minus. At!</p>
                             <small>Review by Jake</small>
                         </div>
                         <div class="list-group-item py-3">
@@ -262,7 +270,9 @@
                                 <i class="bi bi-star-fill"></i>
                             </div>
                             <h5 class="mb-1">A must buy for every aspiring web dev.</h5>
-                            <p class="mb-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem dolorum modi beatae quod ad corrupti officiis neque quibusdam. Fuga sunt dicta ex eos! Dolorum quisquam consequatur tempora sunt minus. At!</p>
+                            <p class="mb-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem
+                                dolorum modi beatae quod ad corrupti officiis neque quibusdam. Fuga sunt dicta ex eos!
+                                Dolorum quisquam consequatur tempora sunt minus. At!</p>
                             <small>Review by Jake</small>
                         </div>
                         <div class="list-group-item py-3">
@@ -274,7 +284,9 @@
                                 <i class="bi bi-star-half"></i>
                             </div>
                             <h5 class="mb-1">A must buy for every aspiring web dev.</h5>
-                            <p class="mb-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem dolorum modi beatae quod ad corrupti officiis neque quibusdam. Fuga sunt dicta ex eos! Dolorum quisquam consequatur tempora sunt minus. At!</p>
+                            <p class="mb-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem
+                                dolorum modi beatae quod ad corrupti officiis neque quibusdam. Fuga sunt dicta ex eos!
+                                Dolorum quisquam consequatur tempora sunt minus. At!</p>
                             <small>Review by Jake</small>
                         </div>
                     </div>
@@ -300,8 +312,13 @@
                                 <i class="bi bi-envelope-at-fill"></i>
                             </span>
                             <input type="email" id="email" class="form-control" placeholder="eg : neo@example.com">
+                            <span class="input-group-text">
+                                <span class="tt" title="Enter an email address where we can reach.">
+                                    <i class="bi bi-question-circle text-muted"></i>
+                                </span>
+                            </span>
                         </div>
-                        
+
 
                         <label for="name" class="form-label">Name: </label>
                         <div class="mb-4 input-group">
@@ -309,8 +326,13 @@
                                 <i class="bi bi-person-fill"></i>
                             </span>
                             <input type="text" id="name" class="form-control" placeholder="eg : Its Neo">
+                            <span class="input-group-text">
+                                <span class="tt" title="Enter you name...">
+                                    <i class="bi bi-question-circle text-muted"></i>
+                                </span>
+                            </span>
                         </div>
-                        
+
 
                         <label for="subject" class="form-label">What is your question about?</label>
                         <div class="input-group mb-3">
@@ -323,7 +345,7 @@
                                 <option value="other">Other query</option>
                             </select>
                         </div>
-                        
+
                         <div class="form-floating mb-4">
                             <textarea id="query" class="form-control" style="height: 140px;"></textarea>
                             <label for="query" class="form-label">Your query...</label>
@@ -339,7 +361,12 @@
         </div>
     </section>
 
-
+    <script>
+        const tooltips = document.querySelectorAll('.tt')
+        tooltips.forEach(t => {
+            new bootstrap.Tooltip(t)
+        })
+    </script>
 
 </body>
 
